@@ -23,7 +23,7 @@ Object.defineProperty(document.body.style, 'transform', {
   },
 });
 
-import 'froala-editor/js/froala_editor.pkgd.min.js';
+// import 'froala-editor/js/froala_editor.pkgd.min.js';
 import * as $ from 'jquery';
 Object.defineProperty(window, '$', {value: $});
 Object.defineProperty(global, '$', {value: $});
