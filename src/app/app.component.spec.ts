@@ -1,7 +1,6 @@
 import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
-
-import { FroalaEditorModule, FroalaViewModule } from 'angular-froala-wysiwyg';
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
@@ -9,9 +8,7 @@ describe('AppComponent', () => {
       declarations: [
         AppComponent
       ],
-      imports: [
-        FroalaEditorModule.forRoot(), FroalaViewModule.forRoot(),
-      ],
+      schemas: [CUSTOM_ELEMENTS_SCHEMA],
     }).compileComponents();
   }));
 

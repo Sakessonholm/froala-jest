@@ -3,14 +3,15 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 
-import { FroalaEditorModule, FroalaViewModule } from 'angular-froala-wysiwyg';
+import { EditorModule } from './editor/editor.module';
 
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
-    BrowserModule, FroalaEditorModule.forRoot(), FroalaViewModule.forRoot(),
+    BrowserModule,
+    EditorModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
